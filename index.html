@@ -1,1 +1,30 @@
-<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>BioSocrates Agentic</title><style>body{background:#000;color:#fff;font-family:Arial;text-align:center;padding:20px}.card{background:#111;border:2px solid gold;border-radius:20px;padding:20px;margin:15px auto;max-width:400px}button{background:gold;color:#000;padding:15px;width:100%;border:none;border-radius:10px;font-weight:bold}input{width:90%;padding:15px;border-radius:10px;border:none;margin:10px}.legend{font-size:40px}</style></head><body><h1 style="color:gold">BioSocrates-S3<br>6 Legends - AGENTIC AI</h1><p>Autonomous Agent • Cape Town 2026</p><div class="card" id="start"><h3>What is blocking you?</h3><input id="problem" placeholder="e.g. no energy, no money, no discipline"><button onclick="runAgent()">Consult Legends 🤖</button></div><div class="card" id="result" style="display:none"><div class="legend" id="icon"></div><h2 id="legendName"></h2><p id="analysis"></p><div style="text-align:left;background:#222;padding:15px;border-radius:10px"><b>Protocol:</b><p id="steps"></p></div><button onclick="book()" style="margin-top:15px;background:#25D366;color:#fff">Book R200 Call 📱</button><p><a href="" onclick="location.reload();return false" style="color:gold">Ask Again</a></p></div><script>function runAgent(){let p=document.getElementById("problem").value.toLowerCase();if(!p){alert("Type problem!");return}let a={};if(p.includes("money")||p.includes("wealth")||p.includes("broke")||p.includes("rich")){a={name:"MANSA MUSA",icon:"💰",an:"Wealth block detected. Mansa Musa activated.",st:"1. Morning Gold Visual 5min<br>2. 1 Value Offer Today<br>3. Track R1 Log"}}else if(p.includes("energy")||p.includes("tired")||p.includes("fatig")){a={name:"PHARAOH",icon:"👑",an:"Energy depleted. Pharaoh protocol.",st:"1. Sun+Salt Water 6AM<br>2. No sugar till 12PM<br>3. 20 squats"}}else if(p.includes("beaut")||p.includes("skin")){a={name:"NEFERTITI",icon:"💎",an:"Divine beauty dimmed.",s
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BioSocrates S3 - 6 Legends</title>
+<style>
+body{margin:0;background:#02020a;color:#fff;font-family:system-ui;overflow-x:hidden}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;background:radial-gradient(circle at 50% 20%, #1a1040 0%, #02020a 70%)}
+.hero h1{font-size:42px;font-weight:900;background:linear-gradient(90deg,#a78bfa,#f0abfc,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin:0}
+.hero h2{font-size:18px;letter-spacing:4px;color:#a78bfa;margin:10px 0}
+.hero p{max-width:600px;color:#aaa;margin:20px 0;font-size:16px;line-height:1.6}
+.btn{padding:14px 32px;border-radius:30px;border:0;background:linear-gradient(90deg,#7c3aed,#ec4899);color:white;font-weight:700;font-size:16px;margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;padding:30px;max-width:1200px;margin:0 auto}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:24px;backdrop-filter:blur(10px)}
+.card h3{margin:0 0 6px;font-size:22px}
+.card .tag{font-size:11px;letter-spacing:2px;color:#a78bfa;text-transform:uppercase}
+.card p{color:#aaa;font-size:14px;line-height:1.6;margin:12px 0}
+.stats{display:flex;gap:12px;margin-top:16px}
+.stat{flex:1;background:rgba(0,0,0,0.4);border-radius:12px;padding:10px;text-align:center}
+.stat b{display:block;font-size:18px;color:#fff}
+.stat span{font-size:10px;color:#888}
+footer{text-align:center;padding:40px;color:#555;font-size:12px}
+</style>
+</head>
+<body>
+<div class="hero">
+<h2>BIOSOCRATES SEASON 3</h2>
+<h1>6 LEGENDS<br>ONE DESTINY</h1>
+<p>The universe collapsed. Six legends from six worlds must unite. The final evolution of biology, philosophy and power begins now.</p>
+<button class="btn" onclic
