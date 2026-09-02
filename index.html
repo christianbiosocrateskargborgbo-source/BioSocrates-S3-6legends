@@ -1,32 +1,41 @@
-v<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Throne V2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ONE THRONE - Christian BioSocrates Kargbo</title>
 <style>
-body{background:#000;color:#FFD700;font-family:monospace;padding:15px;text-align:center}
-input{width:90%;padding:15px;font-size:18px;border:2px solid gold}
-button{background:gold;color:#000;padding:12px 30px;font-weight:bold;margin:15px;border:none;font-size:18px}
-#out{background:#111;border:2px solid gold;padding:20px;min-height:120px;text-align:left;white-space:pre-wrap}
+body{background:#000;color:#FFD700;font-family:Arial;text-align:center;margin:0;padding:10px}
+.gold{color:#FFD700}
+.cyan{color:#00FFCC}
+.box{border:2px solid #FFD700;padding:15px;margin:15px auto;max-width:500px;border-radius:15px;background:#111}
+.btn{background:red;color:white;padding:12px 25px;border:none;border-radius:25px;font-weight:bold;margin:10px;cursor:pointer}
+.btn-gold{background:gold;color:black;padding:12px 25px;border:none;border-radius:5px;font-weight:bold;margin:10px;cursor:pointer}
+input{width:90%;padding:12px;border:2px solid gold;border-radius:5px;margin-top:10px}
+#agentBox{text-align:left;min-height:120px;background:#000;border:2px solid gold;padding:12px;color:gold;font-family:monospace;white-space:pre-wrap}
 </style>
 </head>
 <body>
-<h1>👑 THRONE V2</h1>
-<p>Christian BioSocrates - LIVE</p>
-<div id="out">🤖 READY! Type: Mansa Musa, Pharaoh, Nefertiti, Ashanti, Menelik, bio, legends, malaria, hire</div>
-<input id="q" placeholder="Type Mansa Musa">
-<br><button onclick="ask()">ASK THRONE</button>
+
+<h1 style="font-size:32px;margin-top:20px">ONE THRONE<br>IS OCCUPIED</h1>
+<h3>CHRISTIAN BIOSOCRATES KARGBO</h3>
+<p>FROM BO TO HOLLYWOOD<br>26 Letters = 26 Films</p>
+
+<a href="https://www.youtube.com/@ChristianBioSocrates" target="_blank"><button class="btn">🔴 SUBSCRIBE 6 → 1000</button></a>
+
+<div class="box">
+<h2 class="cyan">BioSocrates S3 6 Legends</h2>
+<p style="color:white;font-size:12px">From Bo, Sierra Leone → Cape Town → Global Pharma<br>Agentic AI • AWS S3 • Bio-Data Pipelines • NJ Pharma Ready</p>
+</div>
+
+<div class="box">
+<h3>👑 THRONE AGENT LIVE v3</h3>
+<div id="agentBox">🤖 READY! Type: Mansa Musa, Pharaoh, Nefertiti, Ashanti, Menelik, bio, legends, youtube, hire, malaria</div>
+<input id="q" placeholder="Ask throne... e.g. Legends">
+<br><button class="btn-gold" onclick="ask()">ASK THRONE</button>
+</div>
+
 <script>
-function ans(t){
- t=t.toLowerCase();
- if(t.includes("mansa")||t.includes("musa"))return "👑 MANSA MUSA - Legend 1\nRichest ever $400B\nMali Empire 1312\nLesson: Generosity = wealth";
- if(t.includes("pharaoh"))return "👑 PHARAOH - Legend 2\nEgypt Kemet builder\nPyramids 4000y\nLesson: Build to last";
- if(t.includes("nefer"))return "👑 NEFERTITI - Legend 3\nQueen power+beauty\nPolitical genius\nLesson: Beauty+brains";
- if(t.includes("ashanti")||t.includes("yaa"))return "👑 ASHANTI - Legend 4\nYaa Asantewaa Ghana\nFought British 1900\nLesson: Courage > weapons";
- if(t.includes("menelik"))return "👑 MENELIK II - Legend 5\nEthiopia never colonized\nBeat Italy 1896\nLesson: Wisdom wins";
- if(t.includes("bio"))return "🧬 CHRISTIAN BIOSOCRATES\nBo->Cape Town\n26 Letters=26 Films\n6 Legends";
- if(t.includes("legend"))return "👑 6 LEGENDS:\n1 Mansa Musa\n2 Pharaoh\n3 Nefertiti\n4 Ashanti\n5 Menelik\n6 BioSocrates You";
- if(t.includes("malaria")||t.includes("drug"))return "🧬 AGENTIC CHAIN\nA1 Lit 127 papers\nA2 Mol 3 cmpds\nA3 Tox SAFE";
- if(t.includes("hire"))return "💼 HIRE ME\nchristianbiosocrateskargborgbo@gmail.com\n0630673980\nAgentic AI Drug Discovery";
- if
+const a={
+"mansa musa":"👑 MANSA MUSA - Legend 1\nRichest man ever. Mali Empire 1312. Gold built legacy. You build AI empire from Bo!",
+"pharaoh":"👑 PHARAOH - Legend 2\nKing of Kemet. Built pyramids that las
