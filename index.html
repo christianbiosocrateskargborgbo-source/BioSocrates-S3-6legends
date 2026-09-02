@@ -2,25 +2,36 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>ONE THRONE</title>
+<title>ONE THRONE - Pictures</title>
 <style>
 *{box-sizing:border-box}
-html,body{width:100%;margin:0;padding:0;overflow-x:hidden;background:#000}
-body{color:#FFD700;text-align:center;font-family:Arial;padding:15px}
-h1{font-size:20px;margin:10px 0;white-space:normal;word-break:break-word}
-h2{font-size:15px;word-break:break-word}
-input{width:100%;max-width:320px;padding:12px;border:2px solid gold;border-radius:8px;margin:15px auto;display:block}
-button{background:gold;color:black;padding:12px 25px;font-weight:bold;border:none;border-radius:8px;display:block;margin:10px auto}
-#box{border:2px solid gold;width:100%;max-width:340px;margin:15px auto;padding:12px;border-radius:10px;word-break:break-word;white-space:normal;line-height:1.4;min-height:80px}
+html,body{width:100%;margin:0;padding:0;overflow-x:hidden;background:#000;color:#FFD700;font-family:Arial;text-align:center}
+h1{font-size:22px;margin:15px 0}
+.card{border:2px solid gold;border-radius:12px;margin:12px auto;padding:10px;width:95%;max-width:350px;background:#111}
+.card img{width:100%;height:180px;object-fit:cover;border-radius:8px;border:1px solid gold}
+.card h3{margin:8px 0;color:#FFD700}
+input{width:90%;max-width:320px;padding:12px;border:2px solid gold;border-radius:8px;margin:10px auto;display:block}
+button{background:gold;color:#000;padding:12px 25px;font-weight:bold;border:none;border-radius:8px;margin:10px auto;display:block}
+#box{border:2px solid gold;width:95%;max-width:340px;margin:15px auto;padding:12px;border-radius:10px;word-break:break-word;min-height:60px}
 </style>
 </head>
 <body>
-<h1>👑 ONE THRONE</h1>
-<h2>Bo City 👑 Christian BioSocrates Kargbo</h2>
-<p>Bo City's Voice. Sierra Leone's Brain.</p>
-<input id="q" placeholder="Type name...">
-<button onclick="document.getElementById('box').innerHTML='🔥 THRONE SAYS: '+document.getElementById('q').value+' is a great African legend! From Christian BioSocrates Kargbo in Sierra Leone!'">ASK THRONE</button>
-<div id="box">Answer here... Type and tap button!</div>
-<p style="font-size:11px;margin-top:20px">© 2026 Bo City - ONE THRONE</p>
-</body>
-</html>
+<h1>👑 ONE THRONE - 6 LEGENDS 👑</h1>
+<p>Bo City's Voice - Christian BioSocrates Kargbo</p>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Mansa_Musa.jpg/400px-Mansa_Musa.jpg">
+<h3>1. Mansa Musa</h3>
+<button onclick="document.getElementById('box').innerHTML='👑 MANSA MUSA: Richest man ever! From Mali Empire. Built Timbuktu! 💰'">View Legend</button>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Cleopatra_VII.jpg/400px-Cleopatra_VII.jpg">
+<h3>2. Cleopatra</h3>
+<button onclick="document.getElementById('box').innerHTML='👑 CLEOPATRA: Queen of Egypt! Smart, powerful, last Pharaoh!'">View Legend</button>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Shaka_Zulu.jpg/400px-Shaka_Zulu.jpg">
+<h3>3. Shaka Zulu</h3>
+<button onclick="document.getElementById('box').innerHTML='👑 SHAKA ZULU: Great Zulu warrior king! Built powerful army in South Africa!'"
