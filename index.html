@@ -1,41 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ONE THRONE - Christian BioSocrates Kargbo</title>
-<style>
-body{background:#000;color:#FFD700;font-family:Arial;text-align:center;margin:0;padding:10px}
-.gold{color:#FFD700}
-.cyan{color:#00FFCC}
-.box{border:2px solid #FFD700;padding:15px;margin:15px auto;max-width:500px;border-radius:15px;background:#111}
-.btn{background:red;color:white;padding:12px 25px;border:none;border-radius:25px;font-weight:bold;margin:10px;cursor:pointer}
-.btn-gold{background:gold;color:black;padding:12px 25px;border:none;border-radius:5px;font-weight:bold;margin:10px;cursor:pointer}
-input{width:90%;padding:12px;border:2px solid gold;border-radius:5px;margin-top:10px}
-#agentBox{text-align:left;min-height:120px;background:#000;border:2px solid gold;padding:12px;color:gold;font-family:monospace;white-space:pre-wrap}
-</style>
-</head>
-<body>
-
-<h1 style="font-size:32px;margin-top:20px">ONE THRONE<br>IS OCCUPIED</h1>
-<h3>CHRISTIAN BIOSOCRATES KARGBO</h3>
-<p>FROM BO TO HOLLYWOOD<br>26 Letters = 26 Films</p>
-
-<a href="https://www.youtube.com/@ChristianBioSocrates" target="_blank"><button class="btn">🔴 SUBSCRIBE 6 → 1000</button></a>
-
-<div class="box">
-<h2 class="cyan">BioSocrates S3 6 Legends</h2>
-<p style="color:white;font-size:12px">From Bo, Sierra Leone → Cape Town → Global Pharma<br>Agentic AI • AWS S3 • Bio-Data Pipelines • NJ Pharma Ready</p>
-</div>
-
-<div class="box">
-<h3>👑 THRONE AGENT LIVE v3</h3>
-<div id="agentBox">🤖 READY! Type: Mansa Musa, Pharaoh, Nefertiti, Ashanti, Menelik, bio, legends, youtube, hire, malaria</div>
-<input id="q" placeholder="Ask throne... e.g. Legends">
-<br><button class="btn-gold" onclick="ask()">ASK THRONE</button>
-</div>
-
 <script>
-const a={
-"mansa musa":"👑 MANSA MUSA - Legend 1\nRichest man ever. Mali Empire 1312. Gold built legacy. You build AI empire from Bo!",
-"pharaoh":"👑 PHARAOH - Legend 2\nKing of Kemet. Built pyramids that las
+function ask(){
+let q=document.getElementById('q').value.toLowerCase();
+let b=document.getElementById('agentBox');
+if(q.includes("mansa")){b.innerText="👑 MANSA MUSA - Legend 1\nRichest man ever! Mali Empire 1312.\nGold built legacy. You build AI empire from Bo!";}
+else if(q.includes("pharaoh")){b.innerText="👑 PHARAOH - Legend 2\nKing of Kemet. Built pyramids lasting 5000 years!";}
+else if(q.includes("nefertiti")){b.innerText="👑 NEFERTITI - Legend 3\nQueen of Beauty & Power. Elegance is power!";}
+else if(q.includes("ashanti")){b.innerText="👑 ASHANTI - Legend 4\nWarriors of Gold. Never colonized!";}
+else if(q.includes("menelik")){b.innerText="👑 MENELIK II - Legend 5\nDefeated Italy at Adwa 1896!";}
+else if(q.includes("legend")){b.innerText="👑 6 LEGENDS:\n1. Mansa Musa - Wealth\n2. Pharaoh - Eternal\n3. Nefertiti - Beauty\n4. Ashanti - Warrior\n5. Menelik II - Victory\n6. YOU - BioSocrates!";}
+else if(q.includes("bio")){b.innerText="🧬 Christian BioSocrates Kargbo\nFrom Bo → Cape Town\nAgentic AI for Drug Discovery\nAWS S3 Expert | Bio-Data Pipelines";}
+else if(q.includes("youtube")){b.innerText="🎬 YOUTUBE: 6 → 1000\n26 Letters = 26 Films\nONE THRONE IS OCCUPIED";}
+else if(q.includes("hire")){b.innerText="💼 HIRE ME: Pharma AI | AWS S3 | Drug Discovery\nCape Town / Remote / NJ Ready!";}
+else if(q.includes("malaria")){b.innerText="🦟 Malaria Project: AI for drug discovery!";}
+else{b.innerText="👑 Try: Mansa, Pharaoh, Nefertiti, Ashanti, Menelik, legends, bio, youtube, hire";}
+}
+</script>
