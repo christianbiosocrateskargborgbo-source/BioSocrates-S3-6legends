@@ -1,26 +1,23 @@
-document.getElementById('askBtn').onclick = function() {
-  let input = document.getElementById('query').value.toLowerCase();
-  let out = document.getElementById('output');
-  let response = "";
-
-  if (input.includes("bio")) {
-    response = "🧬 BioSocrates GenAI: Founder Christian Kargbo, Bo->Cape Town. Bio x AI for Africa.";
-  } else if (input.includes("6 legends") || input.includes("legends")) {
-    response = "👑 6 LEGENDS: Mansa Musa (Wealth), Pharaoh (Eternal), Nefertiti (Divine), Ashanti (Warrior), Menelik (Victory), BioSocrates (Future)";
-  } else if (input.includes("malaria") || input.includes("drug") || input.includes("sickle")) {
-    response = `🧬 AGENTIC CHAIN FOR: ${input.toUpperCase()}
-Agent1 Literature: 127 papers scanned
-Agent2 Molecule: 3 compounds proposed
-Agent3 Toxicity: Compound A SAFE (12%)
-Agent4 Synthesis: Protocol ready
-Agent5 Clinical: SA pathway mapped
-Agent6 Socrates: ETHICAL PASS - Recommend Compound A`;
-  } else if (input.includes("hire")) {
-    response = "💼 HIRE ME: AI Engineer | Agentic AI | AWS | christianbiosocrateskargborgbo@gmail.com | 063 067 3980 | Ready for NJ Pharma";
-  } else if (input.includes("youtube") || input.includes("cape") || input.includes("bo")) {
-    response = "📍 From Bo, Sierra Leone to Cape Town - YouTube: BioSocrates S3-6Legends LIVE v5 FINAL";
-  } else {
-    response = "🤖 READY! Try: bio, 6 legends, malaria, drug, hire me, projects";
-  }
-  out.innerHTML = response;
-};
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BioSocrates Throne v5 LIVE</title>
+<style>
+body{background:#000;color:#FFD700;font-family:monospace;padding:20px;text-align:center}
+.hdr{background:#111;border:2px solid #FFD700;padding:10px;font-weight:bold}
+input{width:80%;padding:12px;font-size:16px;margin:20px 0}
+button{background:#FFD700;color:#000;padding:12px 30px;font-weight:bold;border:none;font-size:16px}
+#output{margin-top:20px;background:#111;border:1px solid #FFD700;padding:20px;min-height:100px;white-space:pre-wrap;text-align:left}
+</style>
+</head>
+<body>
+<div class="hdr">THRONE v5 LIVE - IF YOU SEE THIS ITS FIXED</div>
+<h2>👑 BioSocrates 6 Legends Throne</h2>
+<input id="query" placeholder="Type: bio, 6 legends, malaria, drug, hire me">
+<br>
+<button id="askBtn">ASK THRONE</button>
+<div id="output">🤖 Ready! Type malaria or drug</div>
+<script src="throne.js"></script>
+</body>
+</html>
