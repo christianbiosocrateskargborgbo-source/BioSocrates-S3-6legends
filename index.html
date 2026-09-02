@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ONE THRONE - Bo City</title>
+<style>
+body{background:#000;color:#FFD700;text-align:center;padding:15px;font-family:Arial;margin:0;overflow-x:hidden}
+h1{font-size:22px;word-wrap:break-word}
+h2{font-size:16px;word-wrap:break-word}
+#a{border:2px solid gold;margin:15px auto;padding:15px;max-width:90%;border-radius:10px;word-wrap:break-word;white-space:normal;line-height:1.5}
+input{padding:14px;width:90%;max-width:350px;border-radius:8px;border:2px solid gold;box-sizing:border-box}
+button{background:gold;color:black;padding:14px 28px;font-weight:bold;border:none;border-radius:8px;font-size:16px;margin:10px}
+</style>
 </head>
-<body style="background:#000;color:#FFD700;text-align:center;padding:20px;font-family:sans-serif;margin:0">
-<h1 style="font-size:24px">👑 ONE THRONE - Bo City 👑</h1>
-<h2 style="font-size:18px">Christian BioSocrates Kargbo</h2>
+<body>
+<h1>👑 ONE THRONE - Bo City 👑</h1>
+<h2>Christian BioSocrates Kargbo</h2>
 <p>Bo City's Voice. Sierra Leone's Brain.</p>
-<input id="q" placeholder="Type Mansa Musa, Cleopatra..." style="padding:14px;width:90%;max-width:400px;border-radius:8px;border:2px solid gold">
+<input id="q" placeholder="Type Mansa Musa...">
 <br><br>
-<button onclick="a.innerHTML='👑 THRONE SAYS: Mansa Musa richest ever! Mali gold empire! Bo City power! You are BioSocrates!'" style="background:gold;color:black;padding:14px 28px;font-weight:bold;border:none;border-radius:8px;font-size:16px">ASK THRONE</button>
-<div id="a" style="border:2px solid gold;margin:20px auto;padding:15px;max-width:500px;border-radius:10px;min-height:60px;word-wrap:break-word">Answer appears here...</div>
-<p style="margin-top:30px;font-size:12px">© 2026 Bo City • ONE THRONE</p>
+<button onclick="document.getElementById('a').innerHTML='👑 THRONE SAYS:<br><br>'+document.getElementById('q').value+' was a great African legend!<br><br>Christian BioSocrates Kargbo from Sierra Leone is building Bo City future!'">ASK THRONE</button>
+<div id="a">Answer will appear here... Type and ask!</div>
+<p style="margin-top:30px;font-size:12px">© 2026 Bo City</p>
 </body>
 </html>
