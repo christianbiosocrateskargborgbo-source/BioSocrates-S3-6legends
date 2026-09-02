@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ONE THRONE - Bo City</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>ONE THRONE</title>
 <style>
-body{background:#000;color:#FFD700;text-align:center;padding:15px;font-family:Arial;margin:0;overflow-x:hidden}
-h1{font-size:22px;word-wrap:break-word}
-h2{font-size:16px;word-wrap:break-word}
-#a{border:2px solid gold;margin:15px auto;padding:15px;max-width:90%;border-radius:10px;word-wrap:break-word;white-space:normal;line-height:1.5}
-input{padding:14px;width:90%;max-width:350px;border-radius:8px;border:2px solid gold;box-sizing:border-box}
-button{background:gold;color:black;padding:14px 28px;font-weight:bold;border:none;border-radius:8px;font-size:16px;margin:10px}
+*{box-sizing:border-box}
+html,body{width:100%;margin:0;padding:0;overflow-x:hidden;background:#000}
+body{color:#FFD700;text-align:center;font-family:Arial;padding:15px}
+h1{font-size:20px;margin:10px 0;white-space:normal;word-break:break-word}
+h2{font-size:15px;word-break:break-word}
+input{width:100%;max-width:320px;padding:12px;border:2px solid gold;border-radius:8px;margin:15px auto;display:block}
+button{background:gold;color:black;padding:12px 25px;font-weight:bold;border:none;border-radius:8px;display:block;margin:10px auto}
+#box{border:2px solid gold;width:100%;max-width:340px;margin:15px auto;padding:12px;border-radius:10px;word-break:break-word;white-space:normal;line-height:1.4;min-height:80px}
 </style>
 </head>
 <body>
-<h1>👑 ONE THRONE - Bo City 👑</h1>
-<h2>Christian BioSocrates Kargbo</h2>
+<h1>👑 ONE THRONE</h1>
+<h2>Bo City 👑 Christian BioSocrates Kargbo</h2>
 <p>Bo City's Voice. Sierra Leone's Brain.</p>
-<input id="q" placeholder="Type Mansa Musa...">
-<br><br>
-<button onclick="document.getElementById('a').innerHTML='👑 THRONE SAYS:<br><br>'+document.getElementById('q').value+' was a great African legend!<br><br>Christian BioSocrates Kargbo from Sierra Leone is building Bo City future!'">ASK THRONE</button>
-<div id="a">Answer will appear here... Type and ask!</div>
-<p style="margin-top:30px;font-size:12px">© 2026 Bo City</p>
+<input id="q" placeholder="Type name...">
+<button onclick="document.getElementById('box').innerHTML='🔥 THRONE SAYS: '+document.getElementById('q').value+' is a great African legend! From Christian BioSocrates Kargbo in Sierra Leone!'">ASK THRONE</button>
+<div id="box">Answer here... Type and tap button!</div>
+<p style="font-size:11px;margin-top:20px">© 2026 Bo City - ONE THRONE</p>
 </body>
 </html>
