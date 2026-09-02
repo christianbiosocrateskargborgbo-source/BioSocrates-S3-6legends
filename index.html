@@ -32,3 +32,36 @@ box.innerText="🔥 Consulting Throne for: "+q+"...\n\nMansa Musa was richest ma
 </script>
 </body>
 </html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ONE THRONE - Christian BioSocrates Kargbo</title>
+<style>
+body{background:#000;color:#FFD700;font-family:Arial;text-align:center;margin:0;padding:10px}
+.box{border:2px solid #FFD700;padding:15px;margin:15px auto;max-width:500px;border-radius:15px;background:#111}
+.btn{background:red;color:white;padding:12px 25px;border:none;border-radius:25px;font-weight:bold;margin:10px;cursor:pointer}
+.btn-gold{background:gold;color:black;padding:15px 30px;border:none;border-radius:8px;font-weight:bold;margin:10px;cursor:pointer;font-size:16px}
+input{width:90%;padding:12px;border:2px solid gold;border-radius:5px;margin-top:10px}
+#agentBox{text-align:left;min-height:120px;background:#000;border:2px solid gold;padding:12px;color:gold;font-family:monospace;white-space:pre-wrap;margin:15px auto;max-width:500px;border-radius:10px}
+</style>
+</head>
+<body>
+<h1>👑 ONE THRONE 👑</h1>
+<div class="box">
+<h3>Ask Your Throne</h3>
+<input id="qInput" placeholder="Type: Mansa Musa, Cleopatra...">
+<br>
+<button class="btn-gold" onclick="askThrone()">ASK THRONE</button>
+</div>
+<div id="agentBox">Throne is ready... Type a name above.</div>
+<script>
+function askThrone(){
+var q=document.getElementById('qInput').value;
+var box=document.getElementById('agentBox');
+if(!q){box.innerText="Please type a name like Mansa Musa";return;}
+box.innerText="🔥 Consulting Throne for: "+q+"...\n\nMansa Musa was richest man in history. Emperor of Mali. Built Timbuktu University. Gave so much gold he crashed economies.\n\nChristian BioSocrates Kargbo - Bo City, Sierra Leone - Building ONE THRONE for Africa!";
+}
+</script>
+</body>
+</html>
