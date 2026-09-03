@@ -1,40 +1,16 @@
-const legends = {
-  Socrates: "I am Socrates. I question everything. What is truth to you, Kargbo?",
-  Galileo: "I am Galileo. I saw stars move. What do you want to discover?",
-  Mandela: "I am Mandela. Freedom is not given, it is taken. What will you fight for?",
-  Ada: "I am Ada Lovelace. First coder. What will you build that lasts?",
-  Leonardo: "I am Leonardo. Art and science are one. What will you create?",
-  Cleopatra: "I am Cleopatra. Power is strategy. How will you rule your throne?"
-};
-let current = "Socrates";
-function enterThrone() {
-  document.getElementById('chatArea').innerHTML = `
-    <div style="padding:20px; color:gold;">
-      <h2>${current} LIVE!</h2>
-      <div id="messages" style="height:200px; overflow-y:auto; border:1px solid gold; padding:10px; margin:10px 0; background:#111;"></div>
-      <input id="userInput" placeholder="Ask ${current}..." style="width:70%; padding:10px; background:black; color:gold; border:1px solid gold;" />
-      <button onclick="sendMsg()" style="padding:10px; background:gold; color:black; font-weight:bold;">SEND</button>
-    </div>
-  `;
-  addMsg(legends[current], current);
+let cur="Socrates";
+function enterThrone(){
+let a=document.getElementById('chatArea');
+a.innerHTML=`<div style="padding:15px"><h3 style="color:gold;text-align:center">${cur} LIVE!</h3><div id="msgs" style="height:180px;overflow:auto;border:1px solid gold;padding:8px;background:#111;color:white"></div><br><input id="inp" placeholder="Type..." style="width:65%;padding:10px"><button onclick="send()" style="background:gold;padding:10px">SEND</button></div>`;
+add(cur+": Ask me anything Kargbo!");
 }
-function addMsg(text, who) {
-  const m = document.getElementById('messages');
-  if(m) m.innerHTML += `<p><b style="color:gold;">${who}:</b> <span style="color:white;">${text}</span></p>`;
+function add(t){let m=document.getElementById('msgs');m.innerHTML+=`<p>${t}</p>`;m.scrollTop=m.scrollHeight;}
+function send(){let i=document.getElementById('inp');let t=i.value;if(!t)return;add("<b>You:</b> "+t);i.value="";setTimeout(()=>{add("<b>"+cur+":</b> I hear '"+t+"' - Wisdom is power! 👑")},600);}
+document.querySelectorAll('button').forEach(b=>{
+let n=b.textContent.trim();
+if(["Socrates","Galileo","Mandela","Ada","Leonardo","Cleopatra"].includes(n)){
+b.onclick=()=>{cur=n;enterThrone();}
 }
-function sendMsg() {
-  const input = document.getElementById('userInput');
-  const txt = input.value;
-  if(!txt) return;
-  addMsg(txt, "Kargbo 10");
-  inpu  t.value = "";
-  setTimeout(() => {
-    let reply = `As ${current}, I hear you: "${txt}". You hold the throne! 👑`;
-    if(current === "Socrates") reply = `You say "${txt}" - but what does it REALLY mean? Question it!`;
-    if(current === "Galileo") reply = `"${txt}" - Look to the stars! Evidence will prove it!`;
-    if(current === "Mandela") reply = `"${txt}" - Courage brother! Freedom continues!`;
-    addMsg(reply, current);
-  }, 800);
-}
-document.addEventListener('DOMContentLoaded', () => {
-  document.queryS
+});
+let eb=[...document.querySelectorAll('button')].find(x=>x.textContent.includes('ENTER'));
+if(eb)eb.onclick=enterThrone;
