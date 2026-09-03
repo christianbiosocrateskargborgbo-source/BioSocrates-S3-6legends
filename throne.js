@@ -1,3 +1,4 @@
+
 let cur="Socrates";
 function enterThrone(){
 let a=document.getElementById('chatArea');
