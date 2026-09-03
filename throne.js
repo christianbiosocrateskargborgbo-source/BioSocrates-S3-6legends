@@ -27,7 +27,7 @@ function sendMsg() {
   const txt = input.value;
   if(!txt) return;
   addMsg(txt, "Kargbo 10");
-  input.value = "";
+  inpu  t.value = "";
   setTimeout(() => {
     let reply = `As ${current}, I hear you: "${txt}". You hold the throne! 👑`;
     if(current === "Socrates") reply = `You say "${txt}" - but what does it REALLY mean? Question it!`;
