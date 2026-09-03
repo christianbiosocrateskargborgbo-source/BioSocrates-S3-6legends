@@ -1,1 +1,31 @@
-github.com/YOUR_USERNAME/BioSocrates-S3-6legends
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BioSocrates S3 - 6 Legends Throne</title>
+<style>
+body{margin:0;background:#0a0a0a;color:#FFD700;font-family:Arial;text-align:center;padding:20px}
+button{padding:15px 30px;font-size:18px;background:gold;color:black;border:none;border-radius:10px;font-weight:bold;cursor:pointer;margin:10px}
+button:active{transform:scale(0.95)}
+#throne{margin-top:30px;font-size:20px}
+</style>
+</head>
+<body>
+<h1>👑 BioSocrates S3 - 6 Legends 👑</h1>
+<p>Throne System Active</p>
+
+<button onclick="activateThrone()">ACTIVATE THRONE</button>
+<button onclick="location.reload()">RELOAD</button>
+
+<div id="throne">Ready...</div>
+
+<script src="throne.js"></script>
+<script>
+function activateThrone(){
+ document.getElementById('throne').innerHTML = "🔥 THRONE ACTIVATED 🔥<br>6 Legends Standing By";
+ if(typeof initThrone === 'function'){ initThrone(); }
+}
+</script>
+</body>
+</html>
