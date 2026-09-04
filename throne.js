@@ -1,6 +1,0 @@
-
-
-function openChat(n){window.cur=n;let a=document.getElementById('chatArea');if(!a){a=document.createElement('div');a.id='chatArea';document.body.appendChild(a)}a.innerHTML='<h2 style=color:gold;text-align:center;margin-top:20px>'+n+' LIVE! 👑</h2><div id=msgs style="height:250px;background:#111;border:2px solid gold;color:white;overflow:auto;padding:10px;margin:10px;text-align:left"></div><input id=inp style="padding:12px;width:60%;margin:10px" placeholder="Ask '+n+'..."><button onclick=send() style="background:gold;color:black;padding:12px;font-weight:bold">SEND</button>';add(n+': Ask me anything Kargbo!');a.scrollIntoView({behavior:'smooth'})}
-function add(t){let m=document.getElementById('msgs');let p=document.createElement('p');p.innerHTML=t;m.appendChild(p);m.scrollTop=m.scrollHeight}
-function send(){let i=document.getElementById('inp');let t=i.value;if(!t)return;add('<b>You:</b> '+t);i.value='';setTimeout(()=>add('<b>'+cur+':</b> My wisdom on "'+t+'" - Knowledge is power!'),700)}
-function enterThrone(){openChat('Socrates')}
