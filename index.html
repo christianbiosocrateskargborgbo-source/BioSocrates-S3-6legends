@@ -1,38 +1,27 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="manifest" href="manifest.json">
-<title>KARGBO THRONE</title>
+<html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>BioSocrates S3 - AI Drug Discovery</title>
 <style>
-body{margin:0;background:#000;color:gold;font-family:Arial;text-align:center}
-.header{padding:30px;border-bottom:3px solid gold}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:15px}
-.card{background:#111;border:2px solid gold;border-radius:15px;padding:15px}
-.card button{background:gold;color:#000;border:none;border-radius:20px;padding:8px 15px;font-weight:bold}
-#chat{margin:15px;background:#111;border:2px solid gold;border-radius:15px;padding:20px}
-</style>
-</head>
-<body>
-<div class="header">
-<div style="font-size:80px">👑💺👑</div>
-<h1>KARGBO THRONE</h1>
-<p>6 Legends - Bo City to the World</p>
+body{margin:0;background:#020617;color:#e2e8f0;font-family:Arial}
+.hero{background:linear-gradient(135deg,#020617 0%,#1e1b4b 50%,#0f172a 100%);padding:40px 20px;text-align:center;border-bottom:3px solid #38bdf8}
+.hero h1{font-size:42px;margin:0;background:linear-gradient(to right,#38bdf8,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:#94a3b8}
+.badge{display:inline-block;background:#38bdf822;border:1px solid #38bdf8;color:#38bdf8;padding:6px 15px;border-radius:20px;font-size:12px;margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;padding:20px}
+.card{background:#0f172a;border:1px solid #1e293b;border-radius:15px;padding:20px}
+.card h3{color:#38bdf8;margin-top:0}
+.btn{background:#38bdf8;color:#000;border:none;padding:10px 20px;border-radius:20px;font-weight:bold;width:100%}
+.mol{font-size:50px;text-align:center;animation:spin 4s linear infinite}
+@keyframes spin{100%{transform:rotate(360deg)}}
+input{width:90%;padding:12px;border-radius:10px;border:1px solid #334155;background:#020617;color:#fff;margin:10px 0}
+</style></head><body>
+<div class="hero">
+<div class="mol">🧬</div>
+<h1>BioSocrates S3</h1>
+<p><b>S3 Engine: Socrates • Science • Solutions</b><br>AI Drug Discovery from Bo City to the World</p>
+<div class="badge">⚗️ AI Powered • 🧪 Lab Ready • 🌍 Global Research</div>
 </div>
+
 <div class="grid">
-<div class="card"><h3>🌟 Talent Hunter</h3><button onclick="chat('Talent active!')">OPEN</button></div>
-<div class="card"><h3>📈 Finance</h3><button onclick="chat('Finance ready!')">OPEN</button></div>
-<div class="card"><h3>🎬 Studio</h3><button onclick="chat('Studio ready!')">OPEN</button></div>
-<div class="card"><h3>🤝 Sponsors</h3><button onclick="chat('Sponsors ready!')">OPEN</button></div>
-<div class="card"><h3>🛡️ Protection</h3><button onclick="chat('Protection on!')">OPEN</button></div>
-<div class="card"><h3>🌍 Global</h3><button onclick="chat('Global ready!')">OPEN</button></div>
-</div>
-<div id="chat">Welcome Boss Christian! Your Throne is live! 👑</div>
-<script>
-function chat(m){document.getElementById('chat').innerHTML=m}
-if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js')}
-</script>
-</body>
-</html>
+<div class="card"><h3>🎯 AI Target Search</h3><input id="disease" placeholder="Enter disease e.g Malaria, Cancer..."><button class="btn" onclick="search()">DISCOVER COMPOUND 💊</button><p id="result" style="color:#5eead4;margin-top:10px"></p></div>
+
+<div class="card"><h3>⚗️ S3 Molecule Lab</h3><p>Spinning Molecules: C21H23NO5 • C16H19N3O4S</p><div class="mol">💊</div><button class="btn" onclick="alert('Molecule Viewer: 3D Mode Activa
