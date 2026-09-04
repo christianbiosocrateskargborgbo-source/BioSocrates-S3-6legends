@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BioSocrates S3</title>
+<style>
+body{background:#0a0f2c;color:#fff;text-align:center;padding-top:80px;font-family:Arial}
+.c{width:90px;height:90px;background:gold;border-radius:50%;margin:0 auto 20px;font-size:45px;line-height:90px;box-shadow:0 0 30px gold}
+.b{border:1px solid gold;border-radius:12px;padding:12px;width:250px;margin:0 auto;background:#111a3d}
+.btn{margin-top:20px;padding:14px 28px;background:gold;color:#000;border:none;border-radius:30px;font-weight:bold}
+</style></head><body>
+<div class="c" onclick="speak()">💊</div>
+<div class="b"><b>BioSocrates S3</b><br>6 LEGENDS Bo<br>C21H23NO5 - EGFR 9.2</div>
+<button class="btn" onclick="speak()">TAP TO HEAR 🔊</button>
+<div id="t" style="margin-top:15px;color:gold">Tap!</div>
+<script>
+function speak(){var m=new SpeechSynthesisUtterance('Hello Boss I am BioSocrates S3 Six Legends Bo City EGFR 9 point 2');speechSynthesis.speak(m);document.getElementById('t').innerText='Speaking Boss!';}
+</script></body></html>
