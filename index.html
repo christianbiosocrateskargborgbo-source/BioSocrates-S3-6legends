@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>👑 KARGBO THRONE</title>
+<style>
+body{background:#000;color:#fff;font-family:Arial;text-align:center;margin:0;padding:10px}
+h1{color:gold;text-shadow:0 0 10px gold}
+.card{background:#fff;color:#000;border:3px solid gold;border-radius:15px;padding:15px;margin:12px;box-shadow:0 0 15px gold}
+button{background:#000;color:gold;border:2px solid gold;border-radius:20px;padding:8px 20px;font-weight:bold}
+#chat{margin:15px;background:#111;border:2px solid gold;border-radius:10px;padding:10px;min-height:100px;text-align:left}
+</style>
+</head>
+<body>
+<h1>👑 KARGBO THRONE 👑</h1>
+<p style="color:gold">6 Legends - Bo City to World 🌍</p>
+<div class="card"><h3>👑 Mandela</h3><button onclick="ask('Mandela')">Ask Mandela</button></div>
+<div class="card"><h3>🏛️ Socrates</h3><button onclick="ask('Socrates')">Ask Socrates</button></div>
+<div class="card"><h3>🧠 Nyeusi Socrates</h3><button onclick="ask('Nyeusi')">Ask Nyeusi</button></div>
+<div class="card"><h3>📚 Achebe</h3><button onclick="ask('Achebe')">Ask Achebe</button></div>
+<div class="card"><h3>✊ Sankara</h3><button onclick="ask('Sankara')">Ask Sankara</button></div>
+<div class="card"><h3>👑 King Kargbo #6</h3><button onclick="ask('Kargbo')">Ask King</button></div>
+<div id="chat"><b>Response:</b><div id="resp">Tap any button Boss! 👑</div></div>
+<script>
+function ask(legend){
+ let q=prompt("Ask "+legend+":");
+ if(!q) return;
+ let r="";
+ if(legend=="Mandela") r="Mandela: Education is weapon, King. "+q+" - Lead with forgiveness.";
+ if(legend=="Socrates") r="Socrates: Why think "+q+"? Question everything!";
+ if(legend=="Nyeusi") r="Nyeusi: Africa wisdom: "+q+" - Ubuntu!";
+ if(legend=="Achebe") r="Achebe: Your story "+q+" will outlive empires!";
+ if(legend=="Sankara") r="Sankara: Comrade! "+q+" - Dare invent future!";
+ if(legend=="Kargbo") r="KING KARGBO: DECREE "+q+" - Bo City to World!";
+ document.getEl
