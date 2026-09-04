@@ -1,4 +1,4 @@
-
+recognition.onend = ()=>{isListening=false;document.getElementById('voiceStatus').innerText='Tap mic';document.getElementById('micBtn').style.background='gold';};recognition.onresult=(e)=>{document.getElementById('voiceInput').value=e.results[0][0].transcript;sendVoiceText();};}function toggleVoice(){if(!recognition){alert('Use Chrome');return;}if(isListening){recognition.stop();}else{isListening=true;recognition.start();}}function speak(t){let u=new SpeechSynthesisUtterance(t);u.rate=0.9;speechSynthesis.speak(u);}function sendVoiceText(){let i=document.getElementById('voiceInput'),b=document.getElementById('voiceBox'),q=i.value;if(!q)return;b.innerHTML+=`<div style="background:#00d4ff;color:white;padding:8px;border-radius:10px;text-align:right">You: ${q}</div>`;let a="I am C21H23NO5! EGFR 9.2! 6 Legends!";if(q.toLowerCase().includes('egfr'))a="EGFR is cancer switch! I block it 9.2!";if(q.toLowerCase().includes('who'))a="6 Legends Bo City to World!";b.innerHTML+=`<div style="background:#1a2a4a;color:gold;padding:8px;border-radius:10px;border:1px solid gold">Capsule: ${a}</div>`;b.scrollTop=b.scrollHeight;speak(a);i.value="";}</script></body></html>
 
 
 
