@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#FFD700">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>👑 KARGBO THRONE</title>
+<style>
+body{background:#000;color:#fff;font-family:Arial;text-align:center;margin:0;padding:10px}
+h1{color:gold;text-shadow:0 0 15px gold}
+.card{background:#fff;color:#000;border:3px solid gold;border-radius:15px;padding:15px;margin:12px}
+button{background:#000;color:gold;border:2px solid gold;border-radius:20px;padding:10px 20px;font-weight:bold}
+#chat{margin:15px;background:#111;border:2px solid gold;border-radius:10px;padding:15px;min-height:80px;text-align:left}
+</style>
+</head>
+<body>
+<h1>👑 KARGBO THRONE 👑</h1>
+<p style="color:gold">6 Legends - Bo City to World 🌍</p>
+<div class="card"><h3>👑 Mandela</h3><button onclick="ask('Mandela')">Ask</button></div>
+<div class="card"><h3>👑 Bob Marley</h3><button onclick="ask('Marley')">Ask</button></div>
+<div class="card"><h3>👑 Haile Selassie</h3><button onclick="ask('Selassie')">Ask</button></div>
+<div class="card"><h3>👑 Marcus Garvey</h3><button onclick="ask('Garvey')">Ask</button></div>
+<div class="card"><h3>👑 Patrice Lumumba</h3><button onclick="ask('Lumumba')">Ask</button></div>
+<div class="card"><h3>👑 Thomas Sankara</h3><button onclick="ask('Sankara')">Ask</button></div>
+<div id="chat">Welcome Boss! Ask a Legend...</div>
+<script>
+function ask(n){document.getElementById('chat').innerHTML="<b>"+n+":</b> Wisdom from Bo City! 👑🔥"}
+</script>
+</body>
+</html>
