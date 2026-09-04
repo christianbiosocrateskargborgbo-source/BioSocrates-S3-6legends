@@ -1,0 +1,13 @@
+{
+  "name": "KARGBO THRONE",
+  "short_name": "KARGBO",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#FFD700",
+  "icons": [{
+    "src": "https://cdn-icons-png.flaticon.com/512/1828/1828884.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}
