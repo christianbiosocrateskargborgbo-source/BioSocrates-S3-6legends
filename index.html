@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="manifest" href="manifest.json">
+<title>KARGBO THRONE</title>
+<style>
+body{margin:0;background:#000;color:gold;font-family:Arial;text-align:center}
+.header{padding:30px;border-bottom:3px solid gold}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:15px}
+.card{background:#111;border:2px solid gold;border-radius:15px;padding:15px}
+.card button{background:gold;color:#000;border:none;border-radius:20px;padding:8px 15px;font-weight:bold}
+#chat{margin:15px;background:#111;border:2px solid gold;border-radius:15px;padding:20px}
+</style>
+</head>
+<body>
+<div class="header">
+<div style="font-size:80px">👑💺👑</div>
+<h1>KARGBO THRONE</h1>
+<p>6 Legends - Bo City to the World</p>
+</div>
+<div class="grid">
+<div class="card"><h3>🌟 Talent Hunter</h3><button onclick="chat('Talent active!')">OPEN</button></div>
+<div class="card"><h3>📈 Finance</h3><button onclick="chat('Finance ready!')">OPEN</button></div>
+<div class="card"><h3>🎬 Studio</h3><button onclick="chat('Studio ready!')">OPEN</button></div>
+<div class="card"><h3>🤝 Sponsors</h3><button onclick="chat('Sponsors ready!')">OPEN</button></div>
+<div class="card"><h3>🛡️ Protection</h3><button onclick="chat('Protection on!')">OPEN</button></div>
+<div class="card"><h3>🌍 Global</h3><button onclick="chat('Global ready!')">OPEN</button></div>
+</div>
+<div id="chat">Welcome Boss Christian! Your Throne is live! 👑</div>
+<script>
+function chat(m){document.getElementById('chat').innerHTML=m}
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js')}
+</script>
+</body>
+</html>
