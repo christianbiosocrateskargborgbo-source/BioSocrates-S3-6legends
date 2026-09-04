@@ -1,4 +1,5 @@
 
+
 document.getElementById("app").innerHTML = `
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:15px;max-width:800px;margin:auto">
 <div style="border:2px solid gold;padding:15px;border-radius:12px;background:#fffbeb"><h3>👑 Nelson Mandela</h3><p>Leadership & Forgiveness</p><button onclick="alert('Mandela: I am the master of my fate')">Talk</button></div>
