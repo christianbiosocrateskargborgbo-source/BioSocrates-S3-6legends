@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BioSocrates S3</title>
+<style>
+body{background:#0a0f2c;color:white;text-align:center;padding-top:80px;font-family:Arial;margin:0}
+.capsule{width:90px;height:90px;background:radial-gradient(#ffeb3b,#ff9800);border-radius:50%;margin:0 auto 20px;font-size:45px;line-height:90px;box-shadow:0 0 30px gold;animation:glow 2s infinite}
+@keyframes glow{0%,100%{box-shadow:0 0 30px gold}50%{box-shadow:0 0 60px gold}}
+.box{border:1px solid gold;border-radius:12px;padding:12px;width:250px;margin:0 auto;background:#111a3d}
+.btn{margin-top:25px;padding:15px 30px;background:gold;color:black;border:none;border-radius:30px;font-weight:bold;font-size:18px}
+#status{margin-top:20px;color:#ffeb3b;font-weight:bold}
+</style>
+</head>
+<body>
+<div class="capsule" onclick="talk()">💊</div>
+<div class="box">
+<b>BioSocrates S3</b><br>
+<small style="color:gold">6 LEGENDS Bo City</small><br>
+<small>C21H23NO5 - EGFR 9.2</small>
+</div>
+<button class="btn" onclick="talk()">TAP TO HEAR VOICE 🔊</button>
+<div id="status">Tap capsule!</div>
+
+<script>
+function talk(){
+ var s=document.getElementById('status');
+ s.innerText="🔊 Speaking...";
+ // BEEP loud
+ try{
+  var ctx=new (window.AudioContext||window.webkitAudioContext)();
+  var o=ctx.createOscillator(); o.frequency.value=800;
+  o.connect(ctx.destination); o.start(); setTimeout(()=>o.stop(),300);
+ }catch(e){}
+ // VOICE
+ var msg=new SpeechSynthesisUtterance();
+ msg.text="Hello Boss! I am C 21 H 23 N O 5! BioSocrates S3! Six Legends! Bo City! My EGFR is 9 point 2! Legends built this!";
+ msg.volume=1; msg.rate=0.9; msg.pitch=1;
+ msg.onend=()=>{s.innerText="✅ Said: Hello Boss! Tap again!";};
+ speechSynthesis.cancel();
+ speechSynthesis.speak(msg);
+}
+</script>
+</body>
+</html>
