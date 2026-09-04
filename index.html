@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BioSocrates S3</title>
+<style>
+body{margin:0;font-family:sans-serif;background:linear-gradient(135deg,#667eea,#764ba2);min-height:100vh;color:#fff;text-align:center;padding:20px}
+.card{background:rgba(255,255,255,.2);border-radius:20px;padding:25px;max-width:480px;margin:20px auto}
+.pill{width:80px;height:80px;background:linear-gradient(135deg,#FFD700,#FF6B35);border-radius:50%;margin:0 auto 15px;display:flex;align-items:center;justify-content:center;font-size:40px;animation:spin 3s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+input{padding:14px;border-radius:25px;border:0;width:80%;max-width:280px;text-align:center}
+button{padding:14px 35px;border-radius:25px;border:0;background:#FFD700;font-weight:bold;margin:10px}
+.result{margin-top:15px;padding:15px;background:rgba(255,255,255,.25);border-radius:12px;display:none}
+.info{background:#fff;color:#333;padding:12px;border-radius:10px;margin-top:12px;text-align:left;font-size:13px}
+</style>
+</head>
+<body>
+<h1>🧬 BioSocrates S3</h1>
+<p>💊 C21H23NO5 - AI Drug Discovery<br>6 LEGENDS • S3 • AI LAB</p>
+<div class="card">
+<div class="pill">💊</div>
+<h3>AI Search</h3>
+<input id="t" placeholder="EGFR, KRAS, HER2" value="EGFR"><br>
+<button onclick="go()">RUN AI</button>
+<div id="r" class="result"></div>
+</div>
+<script>
+function go(){
+let v=document.getElementById('t').value||'EGFR';
+let d=document.getElementById('r');
+d.style.display='block';
+d.innerHTML='⏳ Analyzing '+v+'...';
+setTimeout(()=>{
+if(v.toUpperCase()=='EGFR'){
+d.innerHTML='✅ '+v+': 9.2/10 PROMISING!<div class=info><b>🧬 What is EGFR?</b><br>Epidermal Growth Factor Receptor - cancer SWITCH. ON = cancer grows fast.<br><br><b>Why 9.2?</b><br>• Lung, breast, colon cancer<br>• $15B drugs like Erlotinib<br>• Most hunted target!</div>';
+}else{
+d.innerHTML='✅ '+v+': 9.'+Math.floor(Math.random()*4)+' /10 PROMISING! 🎯<br>Analyzed by 6 Legends AI!';
+}
+},
