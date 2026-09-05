@@ -43,9 +43,22 @@ body{background:#000a1e;color:#fff;text-align:center;font-family:sans-serif;marg
 </div>
 <script>
 let b=document.getElementById('boom');
+b.volume=1.0;
+let ok=false;
+function unlock(){
+ if(!ok){
+  b.play().then(()=>{b.pause();b.currentTime=0;ok=true;}).catch(()=>{});
+ }
+}
+document.body.addEventListener('touchstart',unlock,{once:true});
+document.body.addEventListener('click',unlock,{once:true});
 document.querySelectorAll('.atom').forEach(a=>{
-a.onclick=()=>{b.currentTime=0;b.play();a.style.transform='scale(1.9)';setTimeout(()=>a.style.transform='',250)}
+ a.onclick=()=>{
+  unlock();
+  b.currentTime=0;
+  b.play().catch(e=>{console.log(e)});
+  a.style.transform='scale(1.9)';
+  setTimeout(()=>a.style.transform='',250)
+ }
 });
-setInterval(()=>{try{b.volume=0.25;b.currentTime=0;b.play()}catch(e){}},1600)
 </script>
-</body></html>
