@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BO-ATOM</title>
+<style>
+body{background:#000;color:#0f0;font-family:monospace;text-align:center;padding:15px}
+.atom{display:inline-block;width:70px;height:70px;line-height:70px;margin:5px;border:1px solid #0f0;border-radius:10px;cursor:pointer}
+#lab{min-height:50px;margin:10px}
+button{background:#0f0;color:#000;border:0;padding:10px 20px;border-radius:20px;font-weight:bold;margin:10px;cursor:pointer}
+.box{border:1px solid #222;padding:15px;margin:15px auto;max-width:300px;border-radius:10px;background:#0a0a0a;text-align:left}
+a{color:#0f0;text-decoration:none}
+</style>
+</head>
+<body>
+<div>🧪 BO-ATOM 💊</div>
+<div id="lab"></div>
+<div id="capsule">💊 READY</div>
+<div>
+<div class="atom" style="background:#fff;color:#000" onclick="add('H')">H<br><small>ADD H</small></div>
+<div class="atom" style="background:#f00" onclick="add('O')">O<br><small>ADD O</small></div>
+<div class="atom" style="background:#333" onclick="add('C')">C<br><small>ADD C</small></div>
+<div class="atom" style="background:#00f" onclick="add('N')">N<br><small>ADD N</small></div>
+</div>
+<button onclick="make()">MAKE MEDICINE 💊</button>
+<div id="msg" style="height:20px;color:#ff0;margin:10px"></div>
+<hr style="border:1px solid #0f0">
+<div>📄 RESEARCH</div>
+<div class="box">
+<a href="https://www.academia.edu" target="_blank">🎓 Academia.edu Profile</a><br>
+<a href="#" style="color:#0a0">🧪 BO-ATOM - Molecular Medicine</a><br>
+<span style="color:#555">📦 Papers coming soon</span>
+</div>
+<hr style="border:1px solid #0f0">
+<div style="font-size:12px;color:#888">
+<a href="https://github.com/bo-source/bo-source.github.io" target="_blank">📦 github.com/bo-source</a><br>
+<div style="margin:5px">⭐ STAR MY CODE</div>
+<div>Built with BO-ATOM 🧪</div>
+</div>
+<script>
+let s=[]
+const map={H:{c:'#fff'},O:{c:'#f00'},C:{c:'#333'},N:{c:'#00f'}}
+function render(){let lab=document.getElementById('lab');lab.innerHTML='';
