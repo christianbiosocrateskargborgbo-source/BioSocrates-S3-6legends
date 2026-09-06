@@ -44,4 +44,15 @@ MAKE MEDICINE 💊
 <div style="margin-top:30px;padding:16px;border-top:1px solid #0f0">
 <a href="https://github.com/bo-source" target="_blank">💻 github.com/bo-source</a>
 <br><br>
-<a href="https://github.com/bo-source/bo-source.github.io" style="border:1px solid #0f0;padding:8px 16px;border-radius:8px">⭐ STAR MY CODE<
+<a href="https://github.com/bo-source/bo-source.github.io" style="border:1px solid #0f0;padding:8px 16px;border-radius:8px">⭐ STAR MY CODE</a>
+<p style="color:#666;font-size:12px;margin-top:12px">Built with BO-ATOM 🧪</p>
+</div>
+<script>
+let s=[];let map={H:{c:'#0f0'},O:{c:'#f00'},C:{c:'#fff'},N:{c:'#0ff'}};
+function render(){let lab=document.getElementById('lab');lab.innerHTML='';s.forEach((a,i)=>{let d=document.createElement('div');d.className='atom';d.style.background=map[a].c;d.style.color=a=='C'?'#000':'#fff';d.innerText=a;d.onclick=()=>{s.splice(i,1);render()};lab.appendChild(d)})}
+function add(a){s.push(a);render()}
+function make(){if(s.length==0){msg('ADD ATOMS FIRST!');return}let t=s.join('');let r='BO-MIX '+t;let m='🧪 Custom!';if(t.includes('H')&&t.includes('O')){r='WATER';m='💧 Hydration!'}if(t.includes('C')&&t.includes('H')&&t.includes('O')){r='VITAMIN C';m='🍊 Immune!'}if(t.includes('N')&&t.includes('H')){r='AMINO';m='💪 Muscle!'}document.getElementById('capsule').innerText='💊 '+r;msg(m+' CREATED!');s=[];setTimeout(render,800)}
+function msg(x){let e=document.getElementById('msg');e.innerText=x;e.style.color='#ff0';setTimeout(()=>e.innerText='',2500)}render();
+</script>
+</body>
+</html>
