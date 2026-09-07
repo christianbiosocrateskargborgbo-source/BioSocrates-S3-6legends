@@ -1,0 +1,5 @@
+Compound_Name,Molecular_Formula,Common_Name,Molecular_Weight,Target,Status
+EGFR_Inhibitor,C21H23NO5,Erlotinib_analog,393.41,Lung_Cancer,Active
+EGFR_Inhibitor_2,C22H23N3O4,Gefitinib,446.9,NSCLC,Active
+Kargbo_10,C21H23NO5,Personal_Legend,393.41,BioSocrates_S3,Legend
+BioSocrates_Core,C6H12O6,Glucose,180.16,Metabolism,Core
