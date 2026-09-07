@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BO-ATOM SPINNING - KARGBO</title>
+<style>
+body{margin:0;background:#0a0a0a;color:gold;font-family:Arial;text-align:center;overflow:hidden}
+h1{margin:20px 0;text-shadow:0 0 20px gold}
+#score{font-size:24px;margin:10px}
+.atom{position:absolute;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;cursor:pointer;box-shadow:0 0 20px currentColor;animation:spin 2s linear infinite, float 3s ease-in-out infinite}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes float{0%,100%{transform:translateY(0px) rotate(0deg)}50%{transform:translateY(-20px) rotate(180deg)}}
+</style>
+</head>
+<body>
+<h1>KARGBO 11:55 - SPINNING ATOMS</h1>
+<div id="score">SCORE: 0</div>
+<script>
+let score=0;
+let colors=['#00ff00','#00aaff','#ff3333','#ffff00','#aa00ff','#ff8800'];
+let emojis=['⚛️','🧬','💊','🔬','🧪','💥'];
+for(let i=0;i<6;i++){
+ let d=document.createElement('div');
+ d.className='atom';
+ d.style.background=colors[i];
+ d.style.left=Math.random()*80+'vw';
+ d.style.top=(20+Math.random()*60)+'vh';
+ d.style.color='white';
+ d.style.animationDelay=(i*0.3)+'s';
+ d.innerHTML=emojis[i];
+ d.onclick=()=>{
+   score+=10;
+   document.getElementById('score').innerText='SCORE: '+score;
+   d.style.transform='scale(2)';
+   setTimeout(()=>d.style.transform='scale(1)',200);
+   let audio=new (window.AudioContext||window.webkitAudioContext)();
+   let osc=audio.createOscillator();
+   osc.frequency.value=330+i*110;
+   osc.connect(audio.destination);
+   osc.start();osc.stop(audio.currentTime+0.3);
+ };
+ document.body.appendChild(d);
+}
+</script>
+</body>
+</html>
