@@ -1,5 +1,4 @@
-# 🚀 LAUNCHED ON PRODUCT HUNT - Sept 8 2026
-PRODUCT_HUNT-LAUNCHED_%F0%9F%9A%80-FF6154?style=for-the-badge&logo=producthunt&logoColor=white)](https://www.producthunt.com/posts/biosocrates-s3)
+[![Product Hunt](https://img.shields.io/badge/Product_Hunt-LAUNCHED-FF6154?style=for-the-badge&logo=producthunt&logoColor=white)](https://www.producthunt.com/posts/biosocrates-s3)
 
 > ### 🏆 FROM BO CITY TO PRODUCT HUNT - WE DID IT!
 > **BioSocrates S3 is LIVE on Product Hunt!** Built in Cape Town 🇿🇦, Born in Bo, Sierra Leone 🇸🇱
