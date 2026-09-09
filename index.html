@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSSA 94 KARGBO - 10 ONE THRONE</title>
+<style>
+body{
+ background:#000;
+ color:#00ff88;
+ text-align:center;
+ font-family:Arial Black, Arial;
+ margin:0;
+ padding-bottom:50px;
+ overflow-x:hidden;
+}
+h1{
+ color:#00ff88;
+ font-size:32px;
+ text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 40px #00ff88;
+ margin-top:50px;
+ line-height:1.2;
+ animation: glowText 1.5s ease-in-out infinite alternate;
+}
+@keyframes glowText {
+ from { text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88; }
+ to { text-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88, 0 0 60px #00ff88; }
+}
+
+.circle{
+ width:150px;
+ height:150px;
+ background:radial-gradient(circle at 30% 30%, #ffffff, #87CEEB, #00ff88, #1E90FF);
+ border-radius:50%;
+ margin:25px auto;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ color:#000;
+ font-weight:900;
+ font-size:14px;
+ line-height:1.2;
+ border:4px solid #00ff88;
+ box-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88, 0 0 60px #1E90FF;
+ animation: spin 3s linear infinite;
+}
+@keyframes spin {
+ 0% { transform: rotate(0deg); }
+ 100% { transform: rotate(360deg); }
+}
+
+.pill{
+ font-size:85px;
+ margin:10px;
+ display:inline-block;
+ filter: drop-shadow(0 0 10px gold) drop-shadow(0 0 20px #ff0);
+ animation: spin2 2s linear infinite, bounce 1s ease-in-out infinite alternate;
+}
+@keyframes spin2 {
+ 0% { transform: rotate(0deg) scale(1); }
+ 50% { transform: rotate(180deg) scale(1.2); }
+ 100% { transform: rotate(360deg) scale(1); }
+}
+@keyframes bounce {
+ from { transform: translateY(0px); }
+ to { transform: translateY(-15px); }
+}
+
+.btn{
+ display:block;
+ width:300px;
+ margin:22px auto;
+ padding:20px;
+ border-radius:18px;
+ text-decoration:none;
+ font-weight:900;
+ font-size:15px;
+ color:#000;
+ border:2px solid #fff;
+ box-shadow: 0 0 15px currentColor;
+ animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+ 0% { transform: scale(1); }
+ 50% { transform: scale(1.05); }
+ 100% { transfo
