@@ -4,6 +4,4 @@ BioSocrates is now decentralized! Help fund drug discovery from Bo, Sierra Leone
 
 ### 💰 Donate / Invest - 62x Certified Builder
 
-### 💰 Donate / Invest - 62x Certified Builder
-
 ETH / BNB / BASE / POLYGON (One Address):
